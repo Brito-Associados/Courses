@@ -56,7 +56,7 @@ aside {
 main {
   background: #fff;
   grid-area: main;
-  margin: 24px;
+  margin: 10px;
   padding: 24px;
   overflow: auto;
   box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
@@ -67,6 +67,9 @@ footer {
   grid-area: footer;
   display: block;
   box-shadow: 1px 1px 4px rgba(0, 21, 41, 0.08);
+}
+nav{
+  display: none;
 }
 
 @media  (max-width: 550px){
@@ -87,14 +90,52 @@ footer {
   }
   .ico-user i{
     font-size: 20px;
+
   }
+
   footer{
     display: none;
   }
+
   nav{
     background: #042b4e;
     grid-area: footer;
-    display: block;
     box-shadow: 1px 1px 4px rgba(0, 21, 41, 0.08);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  nav ul li{
+    float: left;
+    padding: 6px;
+    width: 60px;
+    height: 60px;
+  }
+  nav ul li:hover{
+    background-color: #022342;
+    font-weight: bold;
+   }
+  nav ul li a{
+    text-align: center;
+    color: white;
+    display:flex;
+		flex-direction:column;
+  }
+  nav ul li a i{
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+  nav ul li a span{
+    font-size: 10px;
+    margin-top: 3px;
+  }
+
+   main {
+    margin: 1px;
   }
 }
