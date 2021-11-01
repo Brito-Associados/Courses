@@ -13,31 +13,42 @@
 
 <aside>
   <ul nz-menu nzTheme="dark" nzMode="inline">
-    <li nz-submenu nzOpen nzTitle="Acompanhamento" nzIcon="dashboard">
-      <ul>
-        <li nz-menu-item nzMatchRouter>
-          <a routerLink="/welcome">Welcome</a>
-        </li>
-        <li nz-menu-item nzMatchRouter>
-          <a routerLink="/financial">Financeiro</a>
-        </li>
-      </ul>
+
+    <li nz-menu-item nzMatchRouter>
+      <a routerLink="/welcome">
+        <i nz-icon nzType="home" nzTheme="fill"></i>
+        <span>Welcome</span>
+      </a>
     </li>
-    <li nz-submenu nzOpen nzTitle="Cadastros" nzIcon="form">
-      <ul>
-        <li nz-menu-item nzMatchRouter>
-          <a routerLink="/course">Cursos</a>
-        </li>
-        <li nz-menu-item nzMatchRouter>
-          <a routerLink="/student">Alunos</a>
-        </li>
-        <li nz-menu-item nzMatchRouter>
-          <a routerLink="/class">Turmas</a>
-        </li>
-        <li nz-menu-item nzMatchRouter>
-          <a routerLink="/teacher">Professores</a>
-        </li>
-      </ul>
+    <li nz-menu-item nzMatchRouter>
+      <a routerLink="/financial">
+        <i nz-icon nzType="dollar-circle" nzTheme="fill"></i>
+        <span>Financeiro</span>
+      </a>
+    </li>
+    <li nz-menu-item nzMatchRouter>
+      <a routerLink="/course">
+        <i nz-icon nzType="table" nzTheme="outline"></i>
+        <span>Cursos</span>
+      </a>
+    </li>
+    <li nz-menu-item nzMatchRouter>
+      <a routerLink="/student">
+        <i nz-icon nzType="team" nzTheme="outline"></i>
+        <span>Alunos</span>
+      </a>
+    </li>
+    <li nz-menu-item nzMatchRouter>
+      <a routerLink="/class">
+        <i nz-icon nzType="calendar" nzTheme="outline"></i>
+        <span>Turmas</span>
+      </a>
+    </li>
+    <li nz-menu-item nzMatchRouter>
+      <a routerLink="/teacher">
+        <i nz-icon nzType="solution" nzTheme="outline"></i>
+        <span>Professores</span>
+      </a>
     </li>
   </ul>
 </aside>
@@ -75,7 +86,7 @@
     <li>
       <a routerLink="/teacher">
         <i nz-icon nzType="solution" nzTheme="outline"></i>
-        <span>Professores</span>
+        <span>Profes.</span>
       </a>
     </li>
   </ul>

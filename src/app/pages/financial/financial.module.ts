@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { FinancialRoutingModule } from './financial-routing.module';
 import { FinancialComponent } from './financial.component';
+import { IconsProviderModule } from 'src/app/icons-provider.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { FinancialComponent } from './financial.component';
   ],
   imports: [
     CommonModule,
-    FinancialRoutingModule
+    FinancialRoutingModule,
+    IconsProviderModule
   ]
 })
 export class FinancialModule { }

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ClassRoutingModule } from './class-routing.module';
 import { ClassComponent } from './class.component';
+import { IconsProviderModule } from 'src/app/icons-provider.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ClassComponent } from './class.component';
   ],
   imports: [
     CommonModule,
-    ClassRoutingModule
+    ClassRoutingModule,
+    IconsProviderModule
   ]
 })
 export class ClassModule { }

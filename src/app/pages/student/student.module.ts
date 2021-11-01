@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { StudentRoutingModule } from './student-routing.module';
 import { StudentComponent } from './student.component';
+import { IconsProviderModule } from 'src/app/icons-provider.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { StudentComponent } from './student.component';
   ],
   imports: [
     CommonModule,
-    StudentRoutingModule
+    StudentRoutingModule,
+    IconsProviderModule
   ]
 })
 export class StudentModule { }
