@@ -9,8 +9,8 @@ export class UserComponent implements OnInit {
    pageTitle: PageTitleComponent = {
     title: 'Usuário',
     type: 'user',
-    theme: 'outline',
-  };
+    theme: 'outline'
+   };
 
   ngOnInit(): void {}
 }
