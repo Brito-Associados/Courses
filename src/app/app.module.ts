@@ -1,3 +1,4 @@
+import { PageTitleComponent } from './components/page-title/page-title.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -21,7 +22,7 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     NavigationComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,8 +32,8 @@ registerLocaleData(en);
     IconsProviderModule,
     NzLayoutModule,
     NzMenuModule
-  ],
+    ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent  ]
 })
 export class AppModule { }
