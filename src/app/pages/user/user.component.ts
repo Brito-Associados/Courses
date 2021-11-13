@@ -6,7 +6,6 @@ import { PageTitleComponent } from 'src/app/components/page-title/page-title.com
   styleUrls: ['./user.component.css'],
 })
 export class UserComponent implements OnInit {
-  constructor() {}
    pageTitle: PageTitleComponent = {
     title: 'Usuário',
     type: 'user',

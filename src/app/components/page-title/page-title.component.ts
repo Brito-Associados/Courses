@@ -10,6 +10,4 @@ export class PageTitleComponent {
   @Input() title: string = '';
   @Input() type: string = '';
   @Input() theme: ThemeType = 'outline';
-
-  constructor() {}
 }

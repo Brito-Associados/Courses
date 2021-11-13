@@ -15,6 +15,7 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { SharedModule } from './components/shared.module';
 
 registerLocaleData(en);
 
@@ -31,9 +32,12 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     IconsProviderModule,
     NzLayoutModule,
-    NzMenuModule
+    NzMenuModule,
+    SharedModule
     ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent  ]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

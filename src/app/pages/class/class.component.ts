@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageTitleComponent } from 'src/app/components/page-title/page-title.component';
 
 @Component({
   selector: 'app-class',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassComponent implements OnInit {
 
-  constructor() { }
-
+  pageTitle: PageTitleComponent = {
+    title: 'Turmas',
+    type: 'calendar',
+    theme: 'fill',
+  };
   ngOnInit(): void {
   }
 

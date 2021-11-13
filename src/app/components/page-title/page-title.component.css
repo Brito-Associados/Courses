@@ -3,3 +3,8 @@ hr{
   border-left-width: 0;
   border-top: 1px;
 }
+@media  (max-width: 550px){
+  h1{
+    font-size: large;
+  }
+}

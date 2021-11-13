@@ -1,17 +1,16 @@
+import { SharedModule } from './../../components/shared.module';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { TeacherRoutingModule } from './teacher-routing.module';
 import { TeacherComponent } from './teacher.component';
-import { IconsProviderModule } from 'src/app/icons-provider.module';
-import { PageTitleComponent } from 'src/app/components/page-title/page-title.component';
+
 
 @NgModule({
   declarations: [
-    TeacherComponent,
-    PageTitleComponent],
+    TeacherComponent
+  ],
   imports: [
-    CommonModule,
     TeacherRoutingModule,
-    IconsProviderModule]
+    SharedModule
+  ]
 })
 export class TeacherModule {}
