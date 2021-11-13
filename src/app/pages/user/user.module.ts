@@ -1,3 +1,4 @@
+import { PageTitleComponent } from 'src/app/components/page-title/page-title.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +9,9 @@ import { IconsProviderModule } from 'src/app/icons-provider.module';
 
 @NgModule({
   declarations: [
-    UserComponent
+    UserComponent,
+    PageTitleComponent
+
   ],
   imports: [
     CommonModule,
