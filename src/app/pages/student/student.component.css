@@ -1,0 +1,19 @@
+a{
+  color: #0c4b86;
+}
+
+a:hover{
+  opacity: 0.5;
+}
+tr{
+  transition: 0.10s;
+  transform: translateY(1px );
+}
+tr:hover{
+  font-weight: bolder;
+  transition: 0.3s ;
+  transform: translateY(-2px );
+}
+th{
+  color:#0c4b86 ;
+}

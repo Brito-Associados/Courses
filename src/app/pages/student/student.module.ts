@@ -1,7 +1,10 @@
+import { IconsProviderModule } from './../../icons-provider.module';
 import { SharedModule } from './../../components/shared.module';
 import { NgModule } from '@angular/core';
 import { StudentRoutingModule } from './student-routing.module';
 import { StudentComponent } from './student.component';
+import { NzTableModule } from 'ng-zorro-antd/table';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -9,7 +12,10 @@ import { StudentComponent } from './student.component';
     ],
   imports: [
     StudentRoutingModule,
-    SharedModule
-  ]
+    SharedModule,
+    NzTableModule,
+    CommonModule,
+    IconsProviderModule
+    ]
 })
 export class StudentModule { }
