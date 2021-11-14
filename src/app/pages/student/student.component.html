@@ -1,20 +1,32 @@
 <page-title [type]="pageTitle.type" [title]="pageTitle.title" [theme]="pageTitle.theme"></page-title>
-<nz-table #basicTable [nzData]="dataSet" nzTableLayout="fixed" [nzLoading]="isLoadingTable" [nzShowPagination]="false">
+<nz-table #students
+          [nzData]="dataSet"
+          nzTableLayout="fixed"
+          [nzLoading]="isLoadingTable"
+          [nzShowPagination]="false"
+          nzBordered
+          >
   <thead>
     <tr>
-      <th *ngFor="let column of listOfColumns" [nzSortOrder]="column.sortOrder" [nzSortFn]="column.sortFn"
-        [nzSortDirections]="column.sortDirections">Nome</th>
-      <th>Contato</th>
-      <th></th>
+      <th *ngFor="let column of listOfColumns"
+          [nzSortOrder]="column.sortOrder"
+          [nzSortFn]="column.sortFn"
+          [nzSortDirections]="column.sortDirections"
+          colspan="3"
+          >Nome
+        </th>
+      <th colspan="2">Contato</th>
+      <th ></th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let data of basicTable.data">
-      <td>{{data.name}}</td>
-      <td> <a href="tel:+55{{data.cell}}">{{data.cell}}</a>&nbsp;
-        <a href="mailto:{{data.email}}">{{data.email}}</a>
+    <tr *ngFor="let data of students.data">
+      <td colspan="3">{{data.name}}</td>
+      <td colspan="2">
+        <a href="tel:+55{{data.cell}}">{{data.cell}}</a>&nbsp;
+        <a class="email" href="mailto:{{data.email}}">{{data.email}}</a>
       </td>
-      <td>
+      <td [nzAlign]="'center'">
         <a (click)="detail(data)"><i nz-icon nzType="eye" nzTheme="outline"></i></a>
       </td>
     </tr>
